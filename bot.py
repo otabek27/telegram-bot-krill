@@ -10,8 +10,10 @@ bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    javob =  "Assalom aleykum @shahriyor_developer\n"
-    javob += "matn kiriting: "
+    javob = "👋 Assalomu alaykum!\n\n"
+    javob += "🤖 Lotin ↔ Kirill botiga xush kelibsiz!\n\n"
+    javob += "🔄 Men siz yuborgan matnni avtomatik ravishda boshqa alifboga o'girib beraman.\n\n"
+    javob += "✍️ Marhamat, matningizni yuboring:"
     bot.reply_to(message, javob)
 
 
