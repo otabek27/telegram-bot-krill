@@ -20,9 +20,9 @@ def send_welcome(message):
 def echo_all(message):
     msg = message.text
     if msg.isascii():
-        javob = to_cyrillic(msg).title()
+        javob = to_cyrillic(msg).capitalize()
     else:
-        javob = to_latin(msg).title()
+        javob = to_latin(msg).capitalize()
     bot.reply_to(message, javob)
 
 bot.infinity_polling()
